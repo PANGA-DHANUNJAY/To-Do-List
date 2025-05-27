@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h3>To-Do List</h3>
+    <form id="todo-form">
+        <label for="todo">Add a todo:</label>
+        <input type="text" id="todo" name="task" required>
+        <button type="submit" id="submit">Add</button>
+    </form>
+    <div class="todoList" id="todoList">
+        <table  cellspacing="0" cellpadding="5">
+            <thead>
+                <tr>
+                    <th>Task</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="todo-items">
+                <!-- Dynamic todos go here -->
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2" id="todo-count">Total tasks: 0</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</body>
+</html>
